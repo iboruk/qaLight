@@ -10,6 +10,10 @@ public class MainClass {
 
 //        LibClass.elementsOfArray(array);
 //        LibClass.sum(5, 6);
+//        LibClass.sum("Hello ", "World!");
+//        LibClass.sum(5, "12");
+//        LibClass.sum(5, "Fife");  //  88888
+//        LibClass.sum(5, null); // 99999
 //        LibClass.multiplication(5, 2);
 //        LibClass.division(10, 2);
     }
