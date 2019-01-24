@@ -11,9 +11,7 @@ public class MainClass {
 //        LibClass.elementsOfArray(array);
 //        LibClass.sum(5, 6);
 //        LibClass.multiplication(5, 2);
-
-//       LibClass.sum(2, null);
-       LibClass.division(10, 2);
+//        LibClass.division(10, 2);
     }
 
 }

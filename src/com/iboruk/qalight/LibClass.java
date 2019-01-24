@@ -5,6 +5,7 @@ package com.iboruk.qalight;
 
 public class LibClass {
 
+    // Massive elements comparing with 10
     public static void elementsOfArray(int[] array) {
         for (int a : array) {
             if (a < 10) {
@@ -17,21 +18,26 @@ public class LibClass {
         }
     }
 
+
+    // Sum of two int values
     public static int sum(int a, int b) {
         int rez_1 = a + b;
         System.out.println("rez_1 = " + rez_1);
         return rez_1;
     }
 
+    // Sum of two String values
     public static String sum(String a, String b) {
         String rez_2 = a + b;
         System.out.println("rez_2 = " + rez_2);
         return rez_2;
     }
 
+    // Sum of int and String values
     public static int sum(int a, String b) {
         int rez_3 = 0;
         try {
+            // it is String value validation with null (empty value is prohibited)
             if (b == null ) {
                 System.out.println("99999");
                 return rez_3;
@@ -39,27 +45,32 @@ public class LibClass {
             int cc = Integer.valueOf(b);
             rez_3 = a + cc;
             System.out.println("rez_3 = " + rez_3);
-        } catch (NumberFormatException e) {
+        }
+        // it is String value validation with symbols (value shoud contains from digits)
+        catch (NumberFormatException e) {
             System.out.println("88888");
         }
         return rez_3;
     }
 
+    // Multiplication two int values
     public static int multiplication(int a, int b) {
         int rez_3 = a * b;
         System.out.println("rez_3 = " + rez_3);
         return rez_3;
     }
 
+    // Division two int values
     public static int division(int a, int b) {
         int rez_4 = 0;
         try {
-//            int cc = 0;
             rez_4 = a / b;
             System.out.println("rez_4 = " + rez_4);
-        } catch (ArithmeticException e) {
+        }
+        // it is "b" value validation with zero (b should not be equal 0)
+        catch (ArithmeticException e) {
             if (e.toString().contains("by zero")) {
-                System.out.println("Дfffffff");
+                System.out.println("Division by zero is prohibited! Please enter not zero value!");
             } else {
                 throw new RuntimeException(e);
             }
