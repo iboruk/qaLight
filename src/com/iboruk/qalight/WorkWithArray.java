@@ -32,7 +32,7 @@ public class WorkWithArray {
         return matrix1;
     }
 
-    public static int[][] fillRightDiagonal (int x, int y, int value, int diagvalue){
+    public static int[][] fillLeftDiagonal (int x, int y, int value, int diagvalue){
         int[][] matrix2 = createMatrix(x, y, value);
         if (x == y) {
             int[][] templMatrix = matrix2;
@@ -46,7 +46,7 @@ public class WorkWithArray {
         return(matrix2);
     }
 
-    public static int[][] fillLeftDiagonal (int x, int y, int value, int diagvalue){
+    public static int[][] fillRightDiagonal (int x, int y, int value, int diagvalue){
         int[][] matrix2 = createMatrix(x, y, value);
         if (x == y) {
             int[][] templMatrix = matrix2;
