@@ -40,12 +40,26 @@ public class WorkWithArray {
                 templMatrix[i][i] = diagvalue;
                 matrix2 = templMatrix;
             }
-//            printMatrix(matrix2);
         } else {
-            System.out.println("Матрица не квадратная, диагональ не может быть лпределена");
+            System.out.println("Матрица не квадратная, диагональ не может быть пределена");
         }
         return(matrix2);
     }
+
+    public static int[][] fillLeftDiagonal (int x, int y, int value, int diagvalue){
+        int[][] matrix2 = createMatrix(x, y, value);
+        if (x == y) {
+            int[][] templMatrix = matrix2;
+            for (int i = x; i > 0; i--) {
+                templMatrix[x - i][i-1] = diagvalue;
+                matrix2 = templMatrix;
+            }
+        } else {
+            System.out.println("Матрица не квадратная, диагональ не может быть определена");
+        }
+        return(matrix2);
+    }
+
 
     public static void printMatrix(int[][] tempMatrix) {
         for (int i = 0; i < tempMatrix.length; i++) {
@@ -55,4 +69,6 @@ public class WorkWithArray {
             System.out.println();
         }
     }
+
+
 }

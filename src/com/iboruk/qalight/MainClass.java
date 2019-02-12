@@ -1,9 +1,11 @@
 package com.iboruk.qalight;
 
+import com.iboruk.qalight.currency.*;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+import com.iboruk.qalight.currency.Bitcoin;
 import com.sun.istack.internal.localization.NullLocalizable;
 import org.apache.log4j.Logger;
 
@@ -45,25 +47,32 @@ public class MainClass {
 //        WorkWithArray.createMatrix(4,6,7);
 //        WorkWithArray.printMatrix(WorkWithArray.createMatrix(4,6,7));
 //        WorkWithArray.printMatrix(WorkWithArray.fillRightDiagonal(2,3,7, 9));
+        WorkWithArray.printMatrix(WorkWithArray.fillLeftDiagonal(3,3,7, 5));
+
 
 
 
 //      ---------------------- Work With List  -------------------------
-        List<List<String>> ourList = new ArrayList<>();
-        WorkWithList workWithList = new WorkWithList();
+//        List<List<String>> ourList = new ArrayList<>();
+//        WorkWithList workWithList = new WorkWithList();
+//
+//        logger.info(ourList.size());
+//
+//        workWithList.addNewList(ourList);
+//
+//        ourList = workWithList.addValueToListList(0,"test01",ourList);
+//        workWithList.addNewList(ourList);
+//        ourList = workWithList.addValueToListList(1,"test11",ourList);
+//        ourList = workWithList.addValueToListList(1,"test12",ourList);
+//        ourList = workWithList.addValueToListList(0,"test02",ourList);
+//
+//        workWithList.addNewList(ourList);
+//        workWithList.addValueToListList(2,"test21", ourList);
+//        workWithList.addValueToListList(1,"test13", ourList);
 
-        logger.info(ourList.size());
-
-        workWithList.addNewList(ourList);
-
-        ourList = workWithList.addValueToListList(0,"test01",ourList);
-        workWithList.addNewList(ourList);
-        ourList = workWithList.addValueToListList(1,"test11",ourList);
-        ourList = workWithList.addValueToListList(1,"test12",ourList);
-        ourList = workWithList.addValueToListList(0,"test02",ourList);
-
-        workWithList.addNewList(ourList);
-        workWithList.addValueToListList(2,"test21", ourList);
-        workWithList.addValueToListList(1,"test13", ourList);
-    }
+//      ---------------------- Work With Currency  -------------------------
+//        Bitcoin bit = new Bitcoin(8000);
+//        bit.setMarga(100);
+//        bit.exchangeCurrencyToGrn(1);
+   }
 }
